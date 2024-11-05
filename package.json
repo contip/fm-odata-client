@@ -28,7 +28,7 @@
     "test-ci": "nyc --reporter=lcov npm test",
     "build": "tsc --noEmit && tsup",
     "lint": "eslint .",
-    "prepare": "husky install"
+    "prepare": "npm run build"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix"
